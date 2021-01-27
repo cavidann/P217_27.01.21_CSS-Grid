@@ -1,0 +1,52 @@
+section {
+    column-count: 3;
+}
+
+img {
+    width: 100%;
+}
+
+.grid-container {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 0px 0px;
+    grid-template-areas: "sekil-3 sekil-3 sekil-4 sekil-4 sekil-1 sekil-1 sekil-1 sekil-1" "sekil-3 sekil-3 sekil-4 sekil-4 sekil-1 sekil-1 sekil-1 sekil-1" "sekil-5 sekil-5 sekil-5 sekil-5 sekil-1 sekil-1 sekil-1 sekil-1" "sekil-5 sekil-5 sekil-5 sekil-5 sekil-1 sekil-1 sekil-1 sekil-1" "sekil-5 sekil-5 sekil-5 sekil-5 sekil-1 sekil-1 sekil-1 sekil-1" "sekil-6 sekil-6 sekil-6 sekil-6 sekil-2 sekil-2 sekil-2 sekil-2" "sekil-6 sekil-6 sekil-6 sekil-6 sekil-2 sekil-2 sekil-2 sekil-2" "sekil-6 sekil-6 sekil-6 sekil-6 sekil-2 sekil-2 sekil-2 sekil-2";
+}
+
+.sekil-1 {
+    grid-area: sekil-1;
+}
+
+.sekil-2 {
+    grid-area: sekil-2;
+}
+
+.sekil-3 {
+    grid-area: sekil-3;
+}
+
+.sekil-4 {
+    grid-area: sekil-4;
+}
+
+.sekil-5 {
+    grid-area: sekil-5;
+}
+
+.sekil-6 {
+    grid-area: sekil-6;
+}
+
+.grid-container {
+    /* max-width: 991px; */
+    margin: 0 auto;
+}
+
+.grid-container div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
